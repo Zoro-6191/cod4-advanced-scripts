@@ -25,7 +25,7 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
     ```
     thread zoro\_afkplus::init();
     ```
-- Copy and Paste `materials/statusicon_afk`, `material_properties/statusicon_afk, `images/statusicon_afk.iwi`, `techsets/hud_statusicon_afk.techset`, `techsets/sm2/hud_statusicon_afk.techset`, `techniques/tech_statusicon_afk.tech`, `shader_bin/shader_src/ps_3_0_2d_statusicon.hlsl`, `shader_bin/shader_src/vs_3_0_2d_statusicon.hlsl` and `statemaps/default2d_alpha.sm` in `cod4/raw/`
+- Copy and Paste `materials/statusicon_afk`, `material_properties/statusicon_afk`, `images/statusicon_afk.iwi`, `techsets/hud_statusicon_afk.techset`, `techsets/sm2/hud_statusicon_afk.techset`, `techniques/tech_statusicon_afk.tech`, `shader_bin/shader_src/ps_3_0_2d_statusicon.hlsl`, `shader_bin/shader_src/vs_3_0_2d_statusicon.hlsl` and `statemaps/default2d_alpha.sm` in `cod4/raw/`
 - Compile `.hlsl` file pair using [this](https://github.com/Zoro-6191/cod4-2d-shaders/wiki/How-to-Install-1-shader#%EF%B8%8F-just-having-the-materials-wont-work-you-need-to-have-required-files-in-folders-statemaps-techsets-techsetssm2-techniques-and-must-compile-hlsl-file-pair-in-rawshader_binshader_src) guide.
 - Add this in `mod.ff` and compile<br>
     ```
@@ -36,3 +36,6 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
 ## Screenshots:
 
 ![image](https://user-images.githubusercontent.com/52291201/148081046-d83410c4-07a1-402d-a962-91790a723508.png)
+![image](https://user-images.githubusercontent.com/52291201/148093271-4d71c318-7eed-4693-81ff-0356c61f248a.png)
+![image](https://user-images.githubusercontent.com/52291201/148093029-b3fc3626-c765-4e24-a16f-80af171e482b.png)
+
