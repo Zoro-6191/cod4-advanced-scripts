@@ -34,4 +34,5 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
 - Add `images/statusicon_afk.iwi` and `images/death_crush.iwi` in your IWD.
 
 ## Screenshots:
-    ![image](https://user-images.githubusercontent.com/52291201/148081046-d83410c4-07a1-402d-a962-91790a723508.png)
+
+![image](https://user-images.githubusercontent.com/52291201/148081046-d83410c4-07a1-402d-a962-91790a723508.png)
