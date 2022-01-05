@@ -1,0 +1,3 @@
+name,sequence,file,vol_min,vol_max,vol_mod,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle,compression,secondaryaliasname,volumefalloffcurve,startdelay,speakermap,reverb,lfe percentage,center percentage,platform,envelop_min,envelop_max,envelop percentage
+
+sprayer,,promod/sprayer.wav,1.0,1.0,,,,240,300,auto,loaded,,nonlooping,,all_mp,,,,,,,,,,,,,
