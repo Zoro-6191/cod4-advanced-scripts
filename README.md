@@ -94,6 +94,11 @@ Repo contains:
     ```
     thread zoro\_ping::init();
     ```
+- Add a bind button anywhere
+    ```
+    CHOICE_BIND( 5, "Ping", "openscriptmenu vf ping", ; )
+    ```
 - Add `images/headicon_dead.iwi` to IWD
 
 ## Screenshots:
+[![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
