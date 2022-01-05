@@ -64,3 +64,5 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
 - Add `images/<spray>` and `sound/spray/sprayer.wav` into IWD
 
 ## Screenshots:
+![sprayingame](https://user-images.githubusercontent.com/52291201/148189768-79d27e5a-cd88-4d84-88cf-3c8095fd0814.jpg)
+![spraymenu](https://user-images.githubusercontent.com/52291201/148189775-a2a17b5b-db16-4e7d-a004-4f13e3882e8d.png)
