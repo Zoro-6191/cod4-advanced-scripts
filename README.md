@@ -7,17 +7,21 @@ Contributions are welcome.
 ## Scripts and Features:
 
 Each of them also includes necessary files and installation method in case you want just one of them.<br>
-I suggest using `zoro/_eventhandler` even if you're not running any of the other scripts.
+I suggest using `zoro\_eventhandler` even if you're not running any of the other scripts. Although all the scripts work even without it.
+
+Repo contains:
+- [AFK-Plus](#afk-plus-script)
+- [Spray](#spray-script)
+- [Ping](#ping-script)
 
 # AFK-Plus Script 
 
 ## Features:
 
 - Classy looks
-- Auto forcespec and/or forcekick
+- Auto forcespectate and/or forcekick AFK players
 - Players are switched to `TEAM_NONE`, ensuring they can't even spectate while AFK
 - Different techniques for SND/SNR and DM/TDM
-- Spray sound also included
 
 ## Installation:
 
@@ -51,9 +55,15 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
 - Cooldown between each spray
 - Can have any number of sprays
 - Sprays are preserved and re-rendered for all currently playing players every round
+- Spray sound also included
 
 ## Installation:
 
+- Copy and paste `zoro\_spray.gsc`
+- Open `maps/mp/gametypes/_globallogic.gsc` and in the last line of `init()`, paste:<br>
+    ```
+    thread zoro\_spray::init();
+    ```
 - Copy and Paste `fx/spray`, `images/<spray>`, `materials/<spray>`, `material_properties/<spray>`, `mp/sprayTable.csv`, `soundalias/spray`, `sound/spray/sprayer.wav`, `ui_mp/scriptmenus/vfspray.menu` into your `cod4/raw/`
 - Copy and paste all items from `mod.txt` to `mod.csv`
 - Add a button preferably in `class.menu` to open the spray menu
@@ -66,3 +76,24 @@ I suggest using `zoro/_eventhandler` even if you're not running any of the other
 ## Screenshots:
 ![sprayingame](https://user-images.githubusercontent.com/52291201/148189768-79d27e5a-cd88-4d84-88cf-3c8095fd0814.jpg)
 ![spraymenu](https://user-images.githubusercontent.com/52291201/148189775-a2a17b5b-db16-4e7d-a004-4f13e3882e8d.png)
+
+
+# Ping Script
+
+## Features:
+
+- Pings only visible to teammates
+- Pinging player is highlighted in the minimap
+- Players can only ping if they're alive
+- Visible to spectators and in killcams
+
+## Installation:
+
+- Copy and paste `zoro\_ping.gsc`
+- Open `maps/mp/gametypes/_globallogic.gsc` and in the last line of `init()`, paste:<br>
+    ```
+    thread zoro\_ping::init();
+    ```
+- Add `images/headicon_dead.iwi` to IWD
+
+## Screenshots:
