@@ -95,11 +95,15 @@ Repo contains:
     ```
     thread zoro\_ping::init();
     ```
+<<<<<<< HEAD
 - Copy and paste `images/headicon_dead.iwi`, `images/compass_ping`, `materials/compass_ping`, material_properties/compass_ping`
+=======
+>>>>>>> 560067fa28ebc999a2fc005ea346e5ff6d855e96
 - Add a bind button anywhere
     ```
     CHOICE_BIND( 5, "Ping", "openscriptmenu vf ping", ; )
     ```
+<<<<<<< HEAD
 - Add this in `mod.csv` and compile:
     ```
     material,compass_ping
@@ -108,3 +112,9 @@ Repo contains:
 
 ## Screenshots:
 [![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
+=======
+- Add `images/headicon_dead.iwi` to IWD
+
+## Screenshots:
+[![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
+>>>>>>> 560067fa28ebc999a2fc005ea346e5ff6d855e96
