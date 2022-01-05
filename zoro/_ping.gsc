@@ -4,6 +4,7 @@
 init()
 {
     preCacheShader("headicon_dead");
+    preCacheShader("compass_ping");
 
     if( isDefined(level.on) )
 		[[level.on]]( "menu_response", ::processMenuResponse );
@@ -60,8 +61,8 @@ pingRightNow()
 	pingloc=trace["position"]-vector_scale(anglesToForward(angles),50);
 	self.pinged=true;
 	self pingPlayer();
-
-    // TO-DO: Ping appears in minimap
+	
+	self thread minimap(pingloc);
 
 	pinghud=newTeamHudElem(self.pers["team"]);
 	pinghud setShader("headicon_dead",2,2);
@@ -83,4 +84,25 @@ pingRightNow()
 	pinghud destroy();
 	wait 0.3;
 	self.pinged=false;
+}
+
+minimap(position)
+{
+	objCompass = maps\mp\gametypes\_gameobjects::getNextObjID();
+	if ( objCompass != -1 ) 
+	{
+		objective_Add( objCompass, "active", position + ( 0, 0, 25 ) );
+		objective_Icon( objCompass, "compass_ping" );
+		objective_Team( objCompass, self.team );
+		
+		for( i = 0; i < 10; i++ )
+		{
+			wait 0.1;
+			objective_State( objCompass, "invisible" );
+			wait 0.1;
+			objective_State( objCompass, "active" );
+		}
+		objective_delete( objCompass );
+		level.objectiveIDs[objCompass] = false;
+	}
 }

@@ -1,6 +1,9 @@
 // AFK-Plus
 material,statusicon_afk
 
+// Ping
+material,compass_ping
+
 // Spray
 menufile,ui_mp/scriptmenus/spray.menu
 stringtable,mp/sprayTable.csv

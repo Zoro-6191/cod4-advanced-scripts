@@ -86,6 +86,7 @@ Repo contains:
 - Pinging player is highlighted in the minimap
 - Players can only ping if they're alive
 - Visible to spectators and in killcams
+- Pings appear through wall and across map
 
 ## Installation:
 
@@ -94,6 +95,16 @@ Repo contains:
     ```
     thread zoro\_ping::init();
     ```
-- Add `images/headicon_dead.iwi` to IWD
+- Copy and paste `images/headicon_dead.iwi`, `images/compass_ping`, `materials/compass_ping`, material_properties/compass_ping`
+- Add a bind button anywhere
+    ```
+    CHOICE_BIND( 5, "Ping", "openscriptmenu vf ping", ; )
+    ```
+- Add this in `mod.csv` and compile:
+    ```
+    material,compass_ping
+    ```
+- Add `images/headicon_dead.iwi` and `images/compass_ping` to IWD
 
 ## Screenshots:
+[![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
