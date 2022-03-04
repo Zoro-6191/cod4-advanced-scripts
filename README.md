@@ -25,13 +25,22 @@ Repo contains:
 
 ## Installation:
 
+#### Asset List:
+```
+materials:
+    statusicon_afk
+images:
+    statusicon_afk
+    death_crush
+```
+
 - Copy and Paste `zoro/_afkplus.gsc` in your mod.
 - Open `maps/mp/gametypes/_globallogic.gsc` and in the last line of `init()`, paste:<br>
     ```
     thread zoro\_afkplus::init();
     ```
 - Copy and Paste `materials/statusicon_afk`, `material_properties/statusicon_afk`, `images/statusicon_afk.iwi`, `techsets/hud_statusicon_afk.techset`, `techsets/sm2/hud_statusicon_afk.techset`, `techniques/tech_statusicon_afk.tech`, `shader_bin/shader_src/ps_3_0_2d_statusicon.hlsl`, `shader_bin/shader_src/vs_3_0_2d_statusicon.hlsl` and `statemaps/default2d_alpha.sm` in `cod4/raw/`
-- Compile `.hlsl` file pair using [this](https://github.com/Zoro-6191/cod4-2d-shaders/wiki/How-to-Install-1-shader#%EF%B8%8F-just-having-the-materials-wont-work-you-need-to-have-required-files-in-folders-statemaps-techsets-techsetssm2-techniques-and-must-compile-hlsl-file-pair-in-rawshader_binshader_src) guide.
+- Compile `.hlsl` file pair using [this](https://github.com/Zoro-6191/cod4-2d-shaders/wiki/How-to-Install-1-shader#%EF%B8%8F-just-having-the-materials-wont-work-you-need-to-have-required-files-in-folders-statemaps-techsets-techsetssm2-techniques-and-must-compile-hlsl-file-pair-in-rawshader_binshader_src) guide. Command will be `shader_tool 2d_statusicon_afk`.
 - Add this in `mod.csv` and compile<br>
     ```
     material,statusicon_afk
@@ -47,6 +56,15 @@ Repo contains:
 
 # Spray Script
 
+#### Asset List:
+```
+materials:
+    all materials containing "spray" in their name
+images:
+    all images containing "spray" in their name
+sounds:
+    spray/sprayer.wav
+```
 
 ## Features:
 
@@ -80,6 +98,16 @@ Repo contains:
 
 # Ping Script
 
+#### Asset List:
+```
+materials:
+    all materials containing "spray" in their name
+images:
+    statusicon_afk
+    death_crush
+sounds:
+    spray/sprayer.wav
+```
 ## Features:
 
 - Pings only visible to teammates
@@ -87,6 +115,7 @@ Repo contains:
 - Players can only ping if they're alive
 - Visible to spectators and in killcams
 - Pings appear through wall and across map
+- Pings are marked in minimap
 
 ## Installation:
 
@@ -95,15 +124,11 @@ Repo contains:
     ```
     thread zoro\_ping::init();
     ```
-<<<<<<< HEAD
 - Copy and paste `images/headicon_dead.iwi`, `images/compass_ping`, `materials/compass_ping`, material_properties/compass_ping`
-=======
->>>>>>> 560067fa28ebc999a2fc005ea346e5ff6d855e96
 - Add a bind button anywhere
     ```
     CHOICE_BIND( 5, "Ping", "openscriptmenu vf ping", ; )
     ```
-<<<<<<< HEAD
 - Add this in `mod.csv` and compile:
     ```
     material,compass_ping
@@ -112,9 +137,4 @@ Repo contains:
 
 ## Screenshots:
 [![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
-=======
-- Add `images/headicon_dead.iwi` to IWD
 
-## Screenshots:
-[![Image from Gyazo](https://i.gyazo.com/af108e4996e2d89ad681bd90ed73a1b9.gif)](https://gyazo.com/af108e4996e2d89ad681bd90ed73a1b9)
->>>>>>> 560067fa28ebc999a2fc005ea346e5ff6d855e96
