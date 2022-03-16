@@ -101,12 +101,9 @@ sounds:
 #### Asset List:
 ```
 materials:
-    all materials containing "spray" in their name
+    compass_ping
 images:
-    statusicon_afk
-    death_crush
-sounds:
-    spray/sprayer.wav
+    images/compass_ping.iwi
 ```
 ## Features:
 
@@ -124,7 +121,7 @@ sounds:
     ```
     thread zoro\_ping::init();
     ```
-- Copy and paste `images/headicon_dead.iwi`, `images/compass_ping`, `materials/compass_ping`, material_properties/compass_ping`
+- Copy and paste `images/headicon_dead.iwi`, `images/compass_ping.iwi`, `materials/compass_ping`, material_properties/compass_ping`
 - Add a bind button anywhere
     ```
     CHOICE_BIND( 5, "Ping", "openscriptmenu vf ping", ; )

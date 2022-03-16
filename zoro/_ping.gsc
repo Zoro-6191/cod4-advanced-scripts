@@ -89,13 +89,13 @@ pingRightNow()
 minimap(position)
 {
 	objCompass = maps\mp\gametypes\_gameobjects::getNextObjID();
-	if ( objCompass != -1 ) 
+	if ( objCompass > 0 && objCompass < 12 ) 
 	{
 		objective_Add( objCompass, "active", position + ( 0, 0, 25 ) );
 		objective_Icon( objCompass, "compass_ping" );
 		objective_Team( objCompass, self.team );
 		
-		for( i = 0; i < 10; i++ )
+		while( self.pinged )
 		{
 			wait 0.1;
 			objective_State( objCompass, "invisible" );
@@ -103,6 +103,8 @@ minimap(position)
 			objective_State( objCompass, "active" );
 		}
 		objective_delete( objCompass );
-		level.objectiveIDs[objCompass] = false;
+		level.objectiveIDs[objCompass] = false;	
+		level.numGametypeReservedObjectives--;
 	}
+	else level.numGametypeReservedObjectives--;
 }
